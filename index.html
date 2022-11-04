@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <style> pre { font-size: larger;  }   </style>
+    <h1>JS Coding Assignments</h1>
+    <h2>Functions</h2>
+    <pre>
+        // Q.1 Create one function with zero parameter having a console statement;
+        
+      Ans.  function fun1()
+        {
+            console.log("Hello World");
+        }
+        fun1();
+
+        // Q.2 Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+
+       Ans. function add(a,b)
+        {
+            console.log (a+b);
+        }
+        add(4,3);
+
+        // Q.3 Create one Arrow function
+
+       Ans. const test =() =>
+        {
+            console.log("Welcome");
+        }
+        test();
+
+        // Q.4 Print Output
+
+        var x =21;
+        var girl = function()
+        {
+            console.log(x);
+            var x = 20;
+        };
+        girl();
+
+       Ans.  output - Undefined
+
+        // Q.5 Print output: 
+        var x = 21;
+        girl ();
+        console.log(x)
+        function girl() 
+        {
+        console.log(x);
+        var x = 20;
+        };
+
+        Ans.  output - Undefined 
+                   21
+
+        // Q.6 Print output
+        var x = 21;
+        a();
+        b();
+        console.log(a);
+        a = function() { 
+        x = 20;
+            console.log(x);
+        };
+        b = function() {
+            x = 40;
+        console.log(x);
+        };
+
+        Ans.  output - Uncaught ReferenceError: a is not defined
+        
+        //Q.7 Write a function that accepts parameter n and returns factorial of n
+        function fact1(n)
+        {
+            var ans = 1;
+            for (let i = 1; i <= n; i++)
+                ans = ans * i;
+            console.log(ans);
+        };
+        fact1(4);
+        
+        Ans.   output - 24
+    </pre>
+    <script>
+
+    </script>
+</body>
+</html>
